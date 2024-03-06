@@ -1,17 +1,22 @@
-//import logo from './logo.svg';
 import './App.css';
-import Z1 from './Components/Z1';
+import './Responsive.css';
+import Section1 from './Components/Section1';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './Components/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>THIS IS JUST FOR TESTING </p>
-        <Z1 />
-      
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Section1 />} />
+          <Route path="about" element={<About />} />
+          <Route path='contact' element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

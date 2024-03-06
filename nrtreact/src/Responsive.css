@@ -1,0 +1,65 @@
+@media only screen and (max-width: 600px) {
+    /*   Navbar css start here  */
+    .navbar .navbar-brand {
+        margin-right: 300px;
+        padding: 20px;
+    }
+    .navbar .buyNow {
+        margin-top: 10px;
+    }
+    /*   Navbar css end here  */
+
+
+    /*  section1 css start here */
+    .section1FirstDiv {
+        padding: 30px;
+        margin-top: 30px;
+    }
+    .section1{
+        background-image: url(images/designer_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60vh;
+        z-index: -1;
+    }
+    /*  section1 css end here  */
+
+    /* other section css  */
+    .section2FirstDiv{
+        padding: 30px;
+    }
+    .imgCenter{
+        text-align: center;
+    }
+    .paraWidthSet{
+        width: 250px;
+    }
+    .footer1 i{
+        float: left;
+      }
+    .logoShow{
+        display: block;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .section1FirstDiv {
+        padding: 40px;
+        margin-top: 30px;
+    }
+    .imgCenter{
+        text-align: center;
+    }
+    .paraWidthSet{
+        width: 400px;
+    }
+    .footer1 i{
+        float: left;
+      }
+    .logoShow{
+        display: block;
+    }
+    
+
+}
